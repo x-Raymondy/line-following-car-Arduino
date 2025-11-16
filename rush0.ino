@@ -25,8 +25,8 @@ double real_PWM_left;
 double real_PWM_right;//真实转速对应的PWM
 double give_PWM_left;
 double give_PWM_right;//驱动马达所用的PWM值
-double want_PWM_left =60;
-double want_PWM_right =60;//设定值
+double want_PWM_left =10;
+double want_PWM_right =10;//设定值
 //问题：真实转速转为PWM后是否严格线性
 
 
@@ -161,3 +161,4 @@ void loop()
     Serial.println(real_PWM_left);
     //Serial.println(give_PWM_left);//输出pid后的控制数值
 }
+
